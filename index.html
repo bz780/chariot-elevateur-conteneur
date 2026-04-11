@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chariot Élévateur Conteneur — Reach Stacker & Porte-Conteneurs | Expert Manutention Portuaire</title>
+  <meta name="description" content="Spécialiste chariot élévateur conteneur en France : reach stackers, empty container handlers, chariots porte-conteneurs neufs et occasion. Livraison nationale, SAV 48h, devis gratuit.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://chariot-elevateur-conteneur.com/">
+  <meta property="og:title" content="Chariot Élévateur Conteneur — Reach Stacker & Porte-Conteneurs France">
+  <meta property="og:description" content="Expert en manutention de conteneurs : reach stackers 45T, empty container handlers, chariots frontaux. Neuf & occasion. Devis gratuit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chariot-elevateur-conteneur.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="/images/hero.jpg" fetchpriority="high">
+  <!--email_off-->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748b;
+      --slate-300: #cbd5e1;
+      --slate-100: #f1f5f9;
+      --slate-50:  #f8fafc;
+      --yellow-500: #eab308;
+      --yellow-400: #facc15;
+      --yellow-100: #fef9c3;
+      --yellow-50:  #fefce8;
+      --white: #ffffff;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--slate-700); background: var(--white); line-height: 1.6; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(15,23,42,.97); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 36px; height: 36px; }
+    .logo-text { font-size: .95rem; font-weight: 700; color: var(--white); letter-spacing: -.3px; line-height: 1.2; }
+    .logo-text span { color: var(--yellow-400); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .875rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta { background: var(--yellow-500); color: var(--slate-900) !important; padding: 8px 18px; border-radius: 6px; font-weight: 700 !important; }
+    .nav-cta:hover { background: var(--yellow-400) !important; }
+
+    /* HERO */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: var(--slate-900); overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: url('/images/hero.jpg') center/cover no-repeat; opacity: .28; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(15,23,42,.92) 45%, rgba(234,179,8,.08) 100%); }
+    .hero-content { position: relative; max-width: 1200px; margin: 0 auto; padding: 120px 24px 80px; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 7px; background: rgba(234,179,8,.15); border: 1px solid rgba(234,179,8,.3); color: var(--yellow-400); padding: 6px 14px; border-radius: 20px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; margin-bottom: 24px; }
+    .hero-badge::before { content: ''; width: 7px; height: 7px; background: var(--yellow-400); border-radius: 50%; }
+    .hero h1 { font-size: clamp(2.1rem, 5vw, 3.7rem); font-weight: 800; color: var(--white); line-height: 1.1; margin-bottom: 20px; max-width: 820px; }
+    .hero h1 em { color: var(--yellow-400); font-style: normal; }
+    .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,.68); max-width: 580px; margin-bottom: 36px; line-height: 1.75; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary { background: var(--yellow-500); color: var(--slate-900); padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all .2s; border: none; cursor: pointer; display: inline-block; }
+    .btn-primary:hover { background: var(--yellow-400); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(234,179,8,.35); }
+    .btn-outline { background: transparent; color: var(--white); padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 1rem; text-decoration: none; border: 2px solid rgba(255,255,255,.3); transition: all .2s; display: inline-block; }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,.06); }
+    .hero-trust { display: flex; gap: 28px; margin-top: 48px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,.55); font-size: .85rem; }
+    .trust-item svg { color: var(--yellow-400); flex-shrink: 0; }
+
+    /* STRIP */
+    .strip { display: grid; grid-template-columns: repeat(4, 1fr); height: 200px; }
+    .strip img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.75) saturate(.8); transition: filter .3s; }
+    .strip img:hover { filter: brightness(.95) saturate(1.05); }
+
+    /* KPI BAR */
+    .kpi-bar { background: var(--yellow-500); }
+    .kpi-inner { max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .kpi { text-align: center; }
+    .kpi-val { font-size: 2.2rem; font-weight: 800; color: var(--slate-900); line-height: 1; }
+    .kpi-lbl { font-size: .78rem; color: rgba(15,23,42,.7); margin-top: 4px; text-transform: uppercase; letter-spacing: .5px; font-weight: 600; }
+
+    /* SECTIONS */
+    section { padding: 80px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-tag { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--yellow-500); margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 800; color: var(--slate-900); line-height: 1.15; margin-bottom: 16px; }
+    .section-sub { font-size: 1rem; color: var(--slate-500); max-width: 620px; line-height: 1.75; }
+    .section-header { margin-bottom: 52px; }
+    .section-header.centered { text-align: center; }
+    .section-header.centered .section-sub { margin: 0 auto; }
+
+    /* INTRO */
+    .intro-bg { background: var(--slate-100); }
+    .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .intro-body p { color: var(--slate-700); line-height: 1.8; margin-bottom: 16px; }
+    .certif-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+    .certif-badge { background: var(--white); border: 2px solid var(--slate-300); border-radius: 8px; padding: 7px 14px; font-size: .78rem; font-weight: 700; color: var(--slate-700); display: flex; align-items: center; gap: 6px; }
+    .certif-badge span { color: var(--yellow-500); }
+    .intro-visual { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,.15); }
+    .intro-visual img { width: 100%; height: 380px; object-fit: cover; display: block; }
+    .intro-visual-badge { background: var(--yellow-500); color: var(--slate-900); padding: 10px 18px; font-weight: 700; font-size: .875rem; text-align: center; }
+
+    /* GAMMES */
+    .gammes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .gamme-card { background: var(--white); border: 1px solid var(--slate-300); border-radius: 12px; padding: 28px; transition: all .25s; position: relative; overflow: hidden; }
+    .gamme-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--slate-300); transition: background .25s; }
+    .gamme-card:hover { border-color: var(--yellow-500); box-shadow: 0 8px 28px rgba(234,179,8,.14); transform: translateY(-3px); }
+    .gamme-card:hover::before { background: var(--yellow-500); }
+    .gamme-icon { width: 48px; height: 48px; background: var(--yellow-50); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 1.6rem; }
+    .gamme-ref { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow-500); margin-bottom: 6px; }
+    .gamme-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--slate-900); margin-bottom: 10px; }
+    .gamme-card p { font-size: .875rem; color: var(--slate-500); line-height: 1.65; margin-bottom: 16px; }
+    .gamme-specs { display: flex; flex-wrap: wrap; gap: 6px; }
+    .gamme-spec { font-size: .72rem; background: var(--slate-100); color: var(--slate-700); padding: 3px 9px; border-radius: 4px; font-weight: 600; font-family: 'Courier New', monospace; }
+    .gamme-cta { display: inline-block; margin-top: 16px; font-size: .82rem; font-weight: 700; color: var(--yellow-500); text-decoration: none; }
+    .gamme-cta:hover { text-decoration: underline; }
+
+    /* WHY */
+    .why-bg { background: var(--slate-900); }
+    .why-bg .section-title { color: var(--white); }
+    .why-bg .section-sub { color: rgba(255,255,255,.55); }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .why-item { padding: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); border-radius: 12px; transition: background .25s; }
+    .why-item:hover { background: rgba(255,255,255,.07); }
+    .why-num { font-size: 2.5rem; font-weight: 900; color: var(--yellow-500); line-height: 1; margin-bottom: 12px; }
+    .why-item h3 { font-size: .98rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .why-item p { font-size: .86rem; color: rgba(255,255,255,.55); line-height: 1.65; }
+
+    /* SEGMENTS */
+    .segments-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .segment-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px; background: var(--slate-100); border-radius: 10px; }
+    .segment-icon { width: 44px; height: 44px; background: var(--yellow-50); border: 2px solid var(--yellow-100); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .segment-item h3 { font-size: .95rem; font-weight: 700; color: var(--slate-900); margin-bottom: 4px; }
+    .segment-item p { font-size: .82rem; color: var(--slate-500); line-height: 1.5; }
+
+    /* PROCESS */
+    .process-bg { background: var(--slate-800); }
+    .process-bg .section-title { color: var(--white); }
+    .process-bg .section-sub { color: rgba(255,255,255,.55); }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 27px; left: calc(12.5% + 14px); right: calc(12.5% + 14px); height: 2px; background: rgba(234,179,8,.3); z-index: 0; }
+    .process-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+    .step-num { width: 56px; height: 56px; background: var(--yellow-500); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 900; color: var(--slate-900); margin: 0 auto 20px; border: 3px solid var(--slate-800); }
+    .process-step h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .process-step p { font-size: .82rem; color: rgba(255,255,255,.5); line-height: 1.55; }
+
+    /* TESTI */
+    .testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .testi-card { background: var(--slate-100); border-radius: 12px; padding: 28px; border-left: 4px solid var(--yellow-500); }
+    .testi-stars { color: var(--yellow-500); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testi-text { font-size: .93rem; color: var(--slate-700); line-height: 1.75; font-style: italic; margin-bottom: 20px; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--slate-800); display: flex; align-items: center; justify-content: center; font-size: .95rem; font-weight: 700; color: var(--yellow-400); flex-shrink: 0; }
+    .testi-name { font-weight: 700; font-size: .9rem; color: var(--slate-900); }
+    .testi-role { font-size: .78rem; color: var(--slate-500); }
+
+    /* FAQ */
+    .faq-bg { background: var(--slate-100); }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item { background: var(--white); border-radius: 10px; margin-bottom: 10px; overflow: hidden; border: 1px solid var(--slate-300); }
+    .faq-q { width: 100%; text-align: left; padding: 18px 22px; font-size: .93rem; font-weight: 600; color: var(--slate-900); background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .faq-q::after { content: '+'; font-size: 1.3rem; color: var(--yellow-500); font-weight: 700; flex-shrink: 0; transition: transform .2s; }
+    .faq-q[aria-expanded="true"]::after { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 22px 18px; font-size: .88rem; color: var(--slate-500); line-height: 1.7; }
+    .faq-a.open { display: block; }
+
+    /* CONTACT */
+    .contact-bg { background: var(--slate-900); }
+    .contact-bg .section-tag { color: var(--yellow-400); }
+    .contact-bg .section-title { color: var(--white); }
+    .contact-bg .section-sub { color: rgba(255,255,255,.55); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contact-details { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+    .contact-detail { display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,.7); font-size: .95rem; }
+    .contact-icon { width: 38px; height: 38px; background: rgba(234,179,8,.12); border: 1px solid rgba(234,179,8,.25); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .form-group { margin-bottom: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    label { display: block; font-size: .82rem; font-weight: 600; color: rgba(255,255,255,.65); margin-bottom: 5px; }
+    input, select, textarea { width: 100%; padding: 11px 14px; border: 1.5px solid rgba(255,255,255,.12); border-radius: 8px; font-size: .9rem; color: var(--white); background: rgba(255,255,255,.06); transition: border-color .2s; font-family: inherit; }
+    input::placeholder, textarea::placeholder { color: rgba(255,255,255,.3); }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--yellow-500); background: rgba(255,255,255,.08); }
+    select { cursor: pointer; color: rgba(255,255,255,.8); }
+    select option { background: var(--slate-800); color: var(--white); }
+    textarea { resize: vertical; min-height: 110px; }
+
+    /* FOOTER */
+    footer { background: var(--slate-900); border-top: 1px solid rgba(255,255,255,.07); color: rgba(255,255,255,.5); padding: 44px 24px 24px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 36px; }
+    .footer-brand p { font-size: .855rem; line-height: 1.7; margin: 12px 0 20px; max-width: 300px; }
+    .footer-col h4 { color: var(--white); font-size: .88rem; font-weight: 700; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a { color: rgba(255,255,255,.45); text-decoration: none; font-size: .855rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--yellow-400); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.07); padding-top: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: .78rem; }
+    .cert-tag { display: inline-flex; align-items: center; gap: 5px; background: rgba(234,179,8,.12); border: 1px solid rgba(234,179,8,.25); color: var(--yellow-400); padding: 3px 10px; border-radius: 4px; font-size: .72rem; font-weight: 700; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .gammes-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .segments-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .strip { grid-template-columns: repeat(2, 1fr); height: 280px; }
+      .kpi-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .intro-grid, .contact-grid { grid-template-columns: 1fr; }
+      .intro-visual { display: none; }
+      .testi-grid, .gammes-grid, .why-grid, .segments-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://chariot-elevateur-conteneur.com/#organisation",
+        "name": "Chariot Élévateur Conteneur",
+        "url": "https://chariot-elevateur-conteneur.com/",
+        "logo": "https://chariot-elevateur-conteneur.com/favicon.svg",
+        "image": "https://chariot-elevateur-conteneur.com/images/hero.jpg",
+        "description": "Spécialiste français en manutention de conteneurs : vente et location de reach stackers, empty container handlers et chariots porte-conteneurs neufs et d'occasion.",
+        "telephone": "+33489762940",
+        "email": "contact@chariot-elevateur-conteneur.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "FR",
+          "addressRegion": "Île-de-France"
+        },
+        "priceRange": "$$$",
+        "foundingDate": "2009",
+        "numberOfEmployees": {"@type": "QuantitativeValue", "value": 18},
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "286",
+          "bestRating": "5"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Gamme chariots élévateurs conteneurs",
+          "itemListElement": [
+            {
+              "@type": "Product",
+              "name": "Reach Stacker 45T",
+              "image": "https://chariot-elevateur-conteneur.com/images/strip1.jpg",
+              "description": "Chariot porte-conteneur reach stacker capacité 45 tonnes pour conteneurs pleins 20/40 pieds. Portée frontale et latérale.",
+              "offers": {"@type": "Offer", "priceCurrency": "EUR", "priceSpecification": {"@type": "PriceSpecification", "price": "0", "priceCurrency": "EUR", "description": "Sur devis"}, "availability": "https://schema.org/InStock", "url": "https://chariot-elevateur-conteneur.com/#gammes"}
+            },
+            {
+              "@type": "Product",
+              "name": "Empty Container Handler",
+              "image": "https://chariot-elevateur-conteneur.com/images/strip2.jpg",
+              "description": "Chariot manutention conteneurs vides haute cadence, empilage jusqu'à 9 hauteurs. Léger et agile pour dépôts intensifs.",
+              "offers": {"@type": "Offer", "priceCurrency": "EUR", "priceSpecification": {"@type": "PriceSpecification", "price": "0", "priceCurrency": "EUR", "description": "Sur devis"}, "availability": "https://schema.org/InStock", "url": "https://chariot-elevateur-conteneur.com/#gammes"}
+            },
+            {
+              "@type": "Product",
+              "name": "Chariot frontal porte-conteneur",
+              "image": "https://chariot-elevateur-conteneur.com/images/strip3.jpg",
+              "description": "Chariot élévateur frontal spécialisé conteneurs 20/40/45 pieds pour terminaux compacts et plateformes multimodales.",
+              "offers": {"@type": "Offer", "priceCurrency": "EUR", "priceSpecification": {"@type": "PriceSpecification", "price": "0", "priceCurrency": "EUR", "description": "Sur devis"}, "availability": "https://schema.org/InStock", "url": "https://chariot-elevateur-conteneur.com/#gammes"}
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://chariot-elevateur-conteneur.com/#website",
+        "url": "https://chariot-elevateur-conteneur.com/",
+        "name": "Chariot Élévateur Conteneur",
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'un reach stacker ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Un reach stacker est un chariot élévateur spécialisé pour la manutention de conteneurs maritimes. Sa flèche télescopique lui permet de saisir, déplacer et empiler des conteneurs sur 3 à 5 rangs de profondeur et jusqu'à 6 hauteurs. Il peut traiter des conteneurs pleins jusqu'à 45 tonnes et des conteneurs vides sur des sites portuaires, ferroviaires ou logistiques."}
+          },
+          {
+            "@type": "Question",
+            "name": "Quelle est la différence entre un chariot pour conteneur plein et un empty container handler ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Un chariot pour conteneurs pleins (reach stacker) est dimensionné pour des charges de 20 à 52 tonnes et dispose d'une structure renforcée. Un empty container handler (ECH) est optimisé pour la manutention rapide de conteneurs vides : il est plus léger, plus agile, avec une plus grande hauteur d'empilage (jusqu'à 9 conteneurs) mais une capacité de charge limitée à 10–12 tonnes."}
+          },
+          {
+            "@type": "Question",
+            "name": "Quelle capacité de levage choisir pour mon terminal ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Le choix dépend du type de conteneurs traités, de la cadence opérationnelle et de l'espace disponible. Pour un trafic mixte pleins/vides, un reach stacker 45T polyvalent est souvent la meilleure option. Pour un dépôt spécialisé vides haute cadence, un ECH dédié sera plus productif. Nos techniciens réalisent une analyse de site gratuite avant toute recommandation."}
+          },
+          {
+            "@type": "Question",
+            "name": "Proposez-vous du matériel d'occasion certifié ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous disposons d'un stock de machines d'occasion reconditionnées et garanties. Chaque engin passe par notre atelier pour une remise en état complète : diagnostic électronique, révision mécanique, vérification des spreaders et tests de charge. Un certificat de conformité est remis avec chaque machine d'occasion."}
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les délais de livraison ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Pour le matériel en stock (occasion et modèles standards), les délais vont de 2 à 6 semaines selon la configuration et les options. Pour les commandes de matériel neuf sur mesure auprès de nos fabricants partenaires (Kalmar, Hyster, Konecranes, CVS Ferrari), comptez 8 à 16 semaines. La mise en service est réalisée par nos techniciens directement sur votre site."}
+          },
+          {
+            "@type": "Question",
+            "name": "Proposez-vous de la location de chariots porte-conteneurs ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous proposons des locations courte durée (à partir d'une semaine) et longue durée (contrats 12 à 36 mois) pour tous nos équipements. La location inclut la livraison, la mise en service, la maintenance préventive et un SAV prioritaire. Solution idéale pour couvrir un pic d'activité ou tester une configuration avant achat."}
+          },
+          {
+            "@type": "Question",
+            "name": "Comment fonctionne votre service après-vente ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Notre SAV intervient sous 48h sur l'ensemble de la France métropolitaine. Nous disposons d'un stock de pièces détachées pour les principales marques distribuées. Les contrats de maintenance préventive incluent des visites trimestrielles, la gestion des fluides et la vérification des organes de sécurité (spreaders, vérins, systèmes de freinage)."}
+          },
+          {
+            "@type": "Question",
+            "name": "Quelles marques de chariots porte-conteneurs distribuez-vous ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Nous travaillons avec les principaux fabricants mondiaux : Kalmar, Hyster, Konecranes, CVS Ferrari, Fantuzzi, SMV Lifttrucks, Svetruck et LTMG pour les gammes économiques. Nous sélectionnons chaque partenaire sur la base de la fiabilité terrain, la disponibilité des pièces en France et la qualité du support technique."}
+          },
+          {
+            "@type": "Question",
+            "name": "Une formation est-elle obligatoire pour conduire un chariot porte-conteneur ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Oui, la conduite de chariots élévateurs de grande capacité nécessite le CACES R489 catégorie 4 (ou équivalent selon le type d'engin) et une formation complémentaire spécifique aux spreaders et à la manutention de conteneurs maritimes. Nous proposons des sessions de formation sur site incluses dans nos offres de mise en service."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <svg class="logo-icon" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="7" fill="#1e293b"/>
+        <rect x="4" y="20" width="28" height="10" rx="2" fill="#eab308" opacity=".9"/>
+        <rect x="8" y="14" width="8" height="7" rx="1" fill="white" opacity=".8"/>
+        <rect x="20" y="14" width="8" height="7" rx="1" fill="white" opacity=".8"/>
+        <rect x="16" y="10" width="4" height="11" rx="1" fill="#eab308"/>
+        <rect x="3" y="28" width="4" height="6" rx="2" fill="#eab308" opacity=".7"/>
+        <rect x="29" y="28" width="4" height="6" rx="2" fill="#eab308" opacity=".7"/>
+      </svg>
+      <span class="logo-text">Chariot<span>Conteneur</span>.com</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#gammes">Équipements</a></li>
+      <li><a href="#segments">Secteurs</a></li>
+      <li><a href="#process">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Spécialiste manutention conteneurs — France entière</div>
+    <h1>Chariots élévateurs<br><em>porte-conteneurs</em><br>pour vos terminaux</h1>
+    <p class="hero-sub">Reach stackers, empty container handlers, chariots frontaux — neuf, occasion certifiée et location. Expertise technique, SAV 48h, mise en service sur site incluse.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Demander un devis</a>
+      <a href="#gammes" class="btn-outline">Voir les équipements</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        15 ans d'expertise conteneurs
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        850+ machines livrées
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        SAV 48h garanti
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Livraison nationale
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <img src="/images/strip1.jpg" alt="Reach stacker port terminal conteneurs" width="300" height="200" loading="lazy">
+  <img src="/images/strip2.jpg" alt="Empty container handler dépôt conteneurs vides" width="300" height="200" loading="lazy">
+  <img src="/images/strip3.jpg" alt="Terminal multimodal chariot porte-conteneur" width="300" height="200" loading="lazy">
+  <img src="/images/strip4.jpg" alt="Manutention industrielle lourde" width="300" height="200" loading="lazy">
+</div>
+
+<!-- KPI -->
+<div class="kpi-bar">
+  <div class="kpi-inner">
+    <div class="kpi">
+      <div class="kpi-val">850+</div>
+      <div class="kpi-lbl">machines livrées</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">45T</div>
+      <div class="kpi-lbl">capacité max standard</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">15 ans</div>
+      <div class="kpi-lbl">d'expertise terrain</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-val">48h</div>
+      <div class="kpi-lbl">SAV garanti</div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro-bg">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-body">
+        <p class="section-tag">Notre expertise</p>
+        <h2 class="section-title">L'équipement de manutention<br>conteneurs, c'est notre cœur de métier</h2>
+        <p>Depuis 2009, nous accompagnons les opérateurs portuaires, les terminaux multimodaux et les dépôts de conteneurs dans le choix, l'acquisition et la maintenance de leurs équipements de manutention lourde. Notre catalogue couvre l'intégralité des besoins : reach stackers pour conteneurs pleins, empty container handlers haute cadence, chariots frontaux et chariots latéraux spécialisés.</p>
+        <p>Chaque projet fait l'objet d'une analyse technique approfondie : cadence de traitement, types de conteneurs, contraintes de site (gabarit, sol, allées), objectifs de productivité. Nous sélectionnons les machines et les partenaires fabricants en conséquence — jamais l'inverse.</p>
+        <div class="certif-row">
+          <div class="certif-badge"><span>✓</span> Kalmar Partenaire</div>
+          <div class="certif-badge"><span>✓</span> Hyster Agréé</div>
+          <div class="certif-badge"><span>✓</span> CACES Certified</div>
+          <div class="certif-badge"><span>✓</span> ISO 45001</div>
+        </div>
+      </div>
+      <div class="intro-visual">
+        <img src="/images/strip5.jpg" alt="Expert manutention conteneur portuaire" width="560" height="380" loading="lazy">
+        <div class="intro-visual-badge">Analyse de site gratuite — Devis sous 48h</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAMMES -->
+<section id="gammes">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag">Nos équipements</p>
+      <h2 class="section-title">6 gammes pour chaque opération</h2>
+      <p class="section-sub">Du reach stacker grand port à l'empty container handler de dépôt, chaque machine est configurée selon vos contraintes opérationnelles réelles.</p>
+    </div>
+    <div class="gammes-grid">
+      <div class="gamme-card">
+        <div class="gamme-icon">🏗️</div>
+        <p class="gamme-ref">REACH STACKER — 35 à 52T</p>
+        <h3>Reach Stacker conteneurs pleins</h3>
+        <p>La référence pour les terminaux traitant des conteneurs ISO 20'/40'/45' chargés. Empilage 3 rangs de profondeur, levée jusqu'à 6 hauteurs. Spreader télescopique intégré.</p>
+        <div class="gamme-specs">
+          <span class="gamme-spec">35–52T</span>
+          <span class="gamme-spec">20/40/45 ft</span>
+          <span class="gamme-spec">6 niveaux</span>
+          <span class="gamme-spec">Spreader auto</span>
+        </div>
+        <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+      <div class="gamme-card">
+        <div class="gamme-icon">📦</div>
+        <p class="gamme-ref">EMPTY CONTAINER HANDLER — 8 à 12T</p>
+        <h3>Empty Container Handler</h3>
+        <p>Conçu pour la manutention intensive de conteneurs vides : agilité maximale, rotation rapide, empilage jusqu'à 9 hauteurs. Productivité optimale pour les dépôts haute cadence.</p>
+        <div class="gamme-specs">
+          <span class="gamme-spec">8–12T</span>
+          <span class="gamme-spec">9 niveaux</span>
+          <span class="gamme-spec">Haute cadence</span>
+          <span class="gamme-spec">Compact</span>
+        </div>
+        <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+      <div class="gamme-card">
+        <div class="gamme-icon">🚛</div>
+        <p class="gamme-ref">CHARIOT FRONTAL — 25 à 45T</p>
+        <h3>Chariot frontal porte-conteneur</h3>
+        <p>Chariot élévateur frontal spécialisé conteneurs, idéal pour les terminaux à espace limité. Maniabilité accrue, rayon de braquage réduit, compatible conteneurs 20'/40'.</p>
+        <div class="gamme-specs">
+          <span class="gamme-spec">25–45T</span>
+          <span class="gamme-spec">20/40 ft</span>
+          <span class="gamme-spec">Compact</span>
+          <span class="gamme-spec">Multimodal</span>
+        </div>
+        <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+      <div class="gamme-card">
+        <div class="gamme-icon">↔️</div>
+        <p class="gamme-ref">CHARIOT LATÉRAL — 20 à 40T</p>
+        <h3>Chariot latéral conteneur</h3>
+        <p>Solution pour allées étroites et espaces contraints. Chargement/déchargement latéral des conteneurs sans manœuvre frontale. Idéal pour dépôts ferroviaires et entrepôts.</p>
+        <div class="gamme-specs">
+          <span class="gamme-spec">20–40T</span>
+          <span class="gamme-spec">Allées étroites</span>
+          <span class="gamme-spec">Rail/Route</span>
+          <span class="gamme-spec">Latéral</span>
+        </div>
+        <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+      <div class="gamme-card">
+        <div class="gamme-icon">⚙️</div>
+        <p class="gamme-ref">CHARIOT LOURD — 32 à 48T</p>
+        <h3>Chariot élévateur lourd polyvalent</h3>
+        <p>Polyvalence maximale pour sites industriels et ports : conteneurs, pièces lourdes, bobines, blocs moteur. Configuration sur-mesure avec pinces, crochets ou spreader.</p>
+        <div class="gamme-specs">
+          <span class="gamme-spec">32–48T</span>
+          <span class="gamme-spec">Polyvalent</span>
+          <span class="gamme-spec">Accessoires</span>
+          <span class="gamme-spec">Industriel</span>
+        </div>
+        <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+      <div class="gamme-card">
+        <div class="gamme-icon">🔄</div>
+        <p class="gamme-ref">TRACTEUR DE TERMINAL</p>
+        <h3>Tracteur de terminal & shunter</h3>
+        <p>Traction de semi-remorques et de remorques de conteneurs en courte distance inter-zones. Idéal pour la fluidification des flux sur terminaux et plateformes logistiques.</p>
+        <div class="gamme-specs">
+          <span class="gamme-spec">Terminal</span>
+          <span class="gamme-spec">Traction semi</span>
+          <span class="gamme-spec">Court-circuit</span>
+          <span class="gamme-spec">Électrique/Diesel</span>
+        </div>
+        <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-bg">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag" style="color:var(--yellow-400)">Pourquoi nous</p>
+      <h2 class="section-title">Un partenaire technique, pas un simple revendeur</h2>
+      <p class="section-sub">Sur un terminal ou un dépôt, une machine mal choisie ou mal maintenue coûte infiniment plus cher qu'elle n'a jamais économisé.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <h3>Analyse de site & conseil indépendant</h3>
+        <p>Avant toute proposition, nos ingénieurs visitent votre site, mesurent vos flux, analysent vos contraintes d'espace et de sol. La recommandation découle du terrain, pas d'un catalogue.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <h3>Stock occasion certifié disponible</h3>
+        <p>Notre parc de machines d'occasion reconditionnées offre des délais courts et des budgets maîtrisés. Chaque engin est inspecté, révisé et garanti en atelier avant livraison.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <h3>Multi-marques sans exclusivité</h3>
+        <p>Kalmar, Hyster, Konecranes, CVS Ferrari, Fantuzzi — nous choisissons la marque la plus adaptée à votre cas d'usage, pas celle avec laquelle nous avons le meilleur accord commercial.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <h3>SAV 48h sur tout le territoire</h3>
+        <p>Une flotte immobilisée, c'est un terminal à l'arrêt. Notre réseau de techniciens terrain garantit une intervention sous 48h, avec stock de pièces critiques disponible immédiatement.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">05</div>
+        <h3>Formation CACES incluse</h3>
+        <p>Chaque mise en service inclut une formation des opérateurs sur l'engin livré. Nous gérons également les renouvellements CACES R489 et les habilitations spécifiques spreader conteneur.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">06</div>
+        <h3>Location & financement flexibles</h3>
+        <p>Achat, location courte ou longue durée, crédit-bail, LLD avec maintenance intégrée — nous construisons le montage financier adapté à votre modèle opérationnel et vos contraintes budgétaires.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTS -->
+<section id="segments">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">Secteurs d'activité</p>
+      <h2 class="section-title">Nous intervenons sur<br>tous types de sites</h2>
+      <p class="section-sub">Notre expertise couvre l'ensemble des environnements où des conteneurs sont manipulés, quel que soit le volume ou le degré de spécialisation.</p>
+    </div>
+    <div class="segments-grid">
+      <div class="segment-item">
+        <div class="segment-icon">⚓</div>
+        <div>
+          <h3>Ports & terminaux maritimes</h3>
+          <p>Équipements lourds pour les grands terminaux à conteneurs, plateformes ro-ro et quais polyvalents. Cadences élevées, contraintes salines.</p>
+        </div>
+      </div>
+      <div class="segment-item">
+        <div class="segment-icon">🚂</div>
+        <div>
+          <h3>Terminaux ferroviaires & multimodaux</h3>
+          <p>Chariots latéraux et reach stackers adaptés aux contraintes gabarit ferroviaire et aux opérations de transbordement rail/route.</p>
+        </div>
+      </div>
+      <div class="segment-item">
+        <div class="segment-icon">🏭</div>
+        <div>
+          <h3>Dépôts de conteneurs</h3>
+          <p>Empty container handlers pour dépôts haute cadence et stockeurs de conteneurs vides. Solutions optimisées pour les gestionnaires de parc.</p>
+        </div>
+      </div>
+      <div class="segment-item">
+        <div class="segment-icon">🔩</div>
+        <div>
+          <h3>Industries lourdes</h3>
+          <p>Sidérurgie, papeterie, chimie — chariots lourds polyvalents pour la manutention de conteneurs et de charges hors-gabarit sur sites industriels.</p>
+        </div>
+      </div>
+      <div class="segment-item">
+        <div class="segment-icon">📦</div>
+        <div>
+          <h3>Plateformes logistiques</h3>
+          <p>Solutions de manutention pour les entrepôts massifiés traitant des flux de conteneurs en import/export ou cross-docking.</p>
+        </div>
+      </div>
+      <div class="segment-item">
+        <div class="segment-icon">🔄</div>
+        <div>
+          <h3>Loueurs de matériel</h3>
+          <p>Flotte de machines reconditionnnées pour loueurs souhaitant compléter leur catalogue avec des équipements spécialisés conteneurs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-bg">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag" style="color:var(--yellow-400)">Notre approche</p>
+      <h2 class="section-title">De l'analyse au SAV : un accompagnement complet</h2>
+      <p class="section-sub">Acheter un chariot porte-conteneur, ce n'est pas commander en ligne. Chaque projet mérite une démarche structurée.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Analyse du besoin</h3>
+        <p>Visite de site, audit des flux, identification des contraintes opérationnelles et des objectifs de productivité.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Sélection & configuration</h3>
+        <p>Choix de la marque, de la capacité, des options et accessoires. Présentation de l'offre avec fiche technique détaillée.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Livraison & mise en service</h3>
+        <p>Transport sur site, installation par nos techniciens spécialisés, formation des opérateurs, tests de charge conformes.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>SAV & maintenance</h3>
+        <p>Contrat de maintenance préventive, interventions prioritaires 48h, fourniture de pièces détachées certifiées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTI -->
+<section>
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag">Témoignages</p>
+      <h2 class="section-title">Ce que disent nos clients</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">« Nous avions besoin de deux reach stackers 45T pour notre nouveau terminal. Leur équipe a fait une analyse complète de notre site avant de proposer quoi que ce soit. La machine livrée correspond exactement à nos contraintes de gabarit et de sol. Mise en service impeccable, opérateurs formés en 2 jours. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">LD</div>
+          <div>
+            <div class="testi-name">Laurent D.</div>
+            <div class="testi-role">Directeur de terminal — Port régional, Méditerranée</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">« On a remplacé notre parc de 3 empty container handlers vieillissants. Le conseil sur le modèle Kalmar était juste — la productivité a augmenté de 22% dès le premier mois. Le SAV est réactif, on n'a jamais attendu plus de 36h pour une intervention. Partenaire de confiance. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">FC</div>
+          <div>
+            <div class="testi-name">François C.</div>
+            <div class="testi-role">Responsable logistique — Opérateur multimodal, Atlantique</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">« Gérant d'un dépôt de 4 000 EVP, j'avais besoin d'une solution occasion fiable et rapide. Ils m'ont proposé un ECH reconditionné garanti 12 mois, livré en 3 semaines. Aucun problème depuis 18 mois. Rapport qualité/prix très compétitif par rapport au neuf. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BP</div>
+          <div>
+            <div class="testi-name">Bernard P.</div>
+            <div class="testi-role">Gérant — Dépôt de conteneurs, Nord</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">« Marché public pour l'équipement de notre nouveau terminal ferroviaire. Ils ont répondu à l'appel d'offres avec une proposition technique très détaillée. Livraison dans les délais contractuels, dossier de réception complet, zéro écart par rapport au cahier des charges. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AJ</div>
+          <div>
+            <div class="testi-name">Arnaud J.</div>
+            <div class="testi-role">Responsable achats — Groupe industriel, Est</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-bg">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag">Questions fréquentes</p>
+      <h2 class="section-title">Tout ce qu'il faut savoir</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Qu'est-ce qu'un reach stacker ?</button>
+        <div class="faq-a">Un reach stacker est un chariot élévateur spécialisé pour la manutention de conteneurs maritimes. Sa flèche télescopique lui permet de saisir, déplacer et empiler des conteneurs sur 3 à 5 rangs de profondeur et jusqu'à 6 hauteurs. Il peut traiter des conteneurs pleins jusqu'à 52 tonnes et est le cœur de l'équipement des terminaux à conteneurs de petite et moyenne capacité.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quelle est la différence entre un chariot conteneurs pleins et un empty container handler ?</button>
+        <div class="faq-a">Un reach stacker pour conteneurs pleins est dimensionné pour des charges de 20 à 52 tonnes avec une structure renforcée. Un empty container handler (ECH) est optimisé pour la manutention rapide de conteneurs vides : plus léger, plus agile, empilage jusqu'à 9 hauteurs mais capacité limitée à 10–12 tonnes. Utiliser un reach stacker pour du vide est techniquement possible mais économiquement absurde — et l'inverse est dangereux.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quelle capacité choisir pour mon terminal ?</button>
+        <div class="faq-a">Cela dépend de votre mix de conteneurs, de votre cadence horaire et de vos contraintes de site. Pour un trafic mixte pleins/vides, un reach stacker 45T polyvalent couvre la majorité des cas. Pour un dépôt spécialisé vides haute cadence, un ECH dédié sera 30 à 40% plus productif. Nos techniciens réalisent une analyse de site gratuite avant toute recommandation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Proposez-vous du matériel d'occasion certifié ?</button>
+        <div class="faq-a">Oui. Notre stock occasion passe systématiquement par notre atelier : diagnostic électronique complet, révision mécanique, vérification des spreaders, tests de charge à 100% et 110% de la capacité nominale. Chaque machine d'occasion est livrée avec un certificat de conformité et une garantie de 6 à 12 mois selon le modèle.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quels sont les délais de livraison ?</button>
+        <div class="faq-a">Pour le stock occasion et les modèles standards : 2 à 6 semaines. Pour les commandes neuf sur mesure auprès de Kalmar, Hyster, Konecranes ou CVS Ferrari : 8 à 16 semaines. La mise en service est réalisée par nos techniciens directement sur votre site, délai inclus dans la commande.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Proposez-vous de la location ?</button>
+        <div class="faq-a">Oui — location courte durée à partir d'une semaine et longue durée de 12 à 36 mois. Nos contrats de location incluent la livraison, la mise en service, la maintenance préventive trimestrielle et le SAV prioritaire 48h. Idéal pour couvrir une montée en charge temporaire, un chantier ou tester une configuration avant achat définitif.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Comment fonctionne votre SAV ?</button>
+        <div class="faq-a">Intervention sous 48h sur toute la France métropolitaine. Nous disposons d'un stock de pièces critiques pour les marques distribuées. Les contrats de maintenance préventive comprennent des visites trimestrielles, la gestion des fluides, la vérification des spreaders et systèmes de freinage. Un rapport d'intervention est transmis après chaque passage technicien.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quelles marques distribuez-vous ?</button>
+        <div class="faq-a">Nous travaillons avec Kalmar, Hyster, Konecranes, CVS Ferrari, Fantuzzi, SMV Lifttrucks, Svetruck et LTMG. Chaque partenaire est sélectionné sur la fiabilité terrain, la disponibilité des pièces en France et la qualité du support technique constructeur. Nous n'avons pas d'exclusivité — nous recommandons la marque la plus adaptée à votre cas d'usage.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Une formation est-elle nécessaire pour conduire ces engins ?</button>
+        <div class="faq-a">Oui. La conduite nécessite le CACES R489 catégorie 4 (chariots élévateurs à mât rétractable > 6T) ou R482 catégorie F selon les configurations, complété par une formation spécifique spreader et manutention de conteneurs maritimes. Nous proposons des sessions de formation sur site incluses dans nos mises en service et gérons les renouvellements CACES.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-bg" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Parlons de votre projet</h2>
+        <p class="section-sub">Analyse de site, devis, disponibilités stock — notre équipe technique répond sous 48h avec une proposition documentée.</p>
+        <ul class="contact-details">
+          <li class="contact-detail">
+            <div class="contact-icon">📞</div>
+            <!--email_off-->+33 4 89 76 29 40<!--/email_off-->
+          </li>
+          <li class="contact-detail">
+            <div class="contact-icon">✉️</div>
+            <!--email_off-->contact@chariot-elevateur-conteneur.com<!--/email_off-->
+          </li>
+          <li class="contact-detail">
+            <div class="contact-icon">🕐</div>
+            Lun–Ven : 7h30–18h30
+          </li>
+          <li class="contact-detail">
+            <div class="contact-icon">🗺️</div>
+            Livraison & SAV — France métropolitaine entière
+          </li>
+        </ul>
+      </div>
+      <form action="#contact" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" required placeholder="Jean">
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" required placeholder="Martin">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="j.martin@terminal.fr">
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="tel" required placeholder="06 xx xx xx xx">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="societe">Société & secteur</label>
+          <input type="text" id="societe" name="societe" placeholder="Terminal Atlantique — Opérateur portuaire">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="equipement">Équipement recherché</label>
+            <select id="equipement" name="equipement">
+              <option value="">— Type d'engin —</option>
+              <option>Reach Stacker 35–52T</option>
+              <option>Empty Container Handler</option>
+              <option>Chariot frontal porte-conteneur</option>
+              <option>Chariot latéral conteneur</option>
+              <option>Chariot lourd polyvalent</option>
+              <option>Tracteur de terminal</option>
+              <option>Je ne sais pas — conseil souhaité</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="modalite">Modalité</label>
+            <select id="modalite" name="modalite">
+              <option value="">— Achat / Location —</option>
+              <option>Achat neuf</option>
+              <option>Achat occasion</option>
+              <option>Location courte durée</option>
+              <option>Location longue durée</option>
+              <option>À définir</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Décrivez votre besoin</label>
+          <textarea id="message" name="message" placeholder="Type de conteneurs, cadence, contraintes de site, urgence éventuelle..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;font-size:1rem;padding:15px;">
+          Envoyer ma demande →
+        </button>
+        <p style="font-size:.73rem;color:rgba(255,255,255,.35);margin-top:10px;text-align:center;">Réponse sous 48h · Analyse de site gratuite · Sans engagement</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-icon" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="7" fill="#1e293b"/>
+            <rect x="4" y="20" width="28" height="10" rx="2" fill="#eab308" opacity=".9"/>
+            <rect x="8" y="14" width="8" height="7" rx="1" fill="white" opacity=".8"/>
+            <rect x="20" y="14" width="8" height="7" rx="1" fill="white" opacity=".8"/>
+            <rect x="16" y="10" width="4" height="11" rx="1" fill="#eab308"/>
+          </svg>
+          <span class="logo-text">Chariot<span>Conteneur</span>.com</span>
+        </a>
+        <p>Spécialiste français en chariots élévateurs porte-conteneurs. Vente, location et SAV de reach stackers, empty container handlers et équipements de manutention lourde.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="cert-tag">✓ Kalmar Partenaire</span>
+          <span class="cert-tag">✓ Hyster Agréé</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Équipements</h4>
+        <ul>
+          <li><a href="#gammes">Reach Stacker 45T</a></li>
+          <li><a href="#gammes">Empty Container Handler</a></li>
+          <li><a href="#gammes">Chariot frontal conteneur</a></li>
+          <li><a href="#gammes">Chariot latéral</a></li>
+          <li><a href="#gammes">Chariot lourd polyvalent</a></li>
+          <li><a href="#gammes">Tracteur de terminal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#process">Analyse de site</a></li>
+          <li><a href="#process">Mise en service</a></li>
+          <li><a href="#process">SAV & maintenance</a></li>
+          <li><a href="#process">Formation CACES</a></li>
+          <li><a href="#contact">Location</a></li>
+          <li><a href="#contact">Devis gratuit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Chariot-Élévateur-Conteneur.com — Expert manutention conteneurs France</span>
+      <span>Kalmar · Hyster · Konecranes · CVS Ferrari · SAV 48h</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const a = btn.nextElementSibling;
+      const open = a.classList.contains('open');
+      document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+      document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded','false'));
+      if (!open) { a.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+</script>
+<!--/email_off-->
+</body>
+</html>
