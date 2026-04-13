@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chariot-elevateur-conteneur.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="/images/hero.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600&q=80" fetchpriority="high">
   <!--email_off-->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -209,6 +209,35 @@
     .footer-bottom { border-top: 1px solid rgba(255,255,255,.07); padding-top: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: .78rem; }
     .cert-tag { display: inline-flex; align-items: center; gap: 5px; background: rgba(234,179,8,.12); border: 1px solid rgba(234,179,8,.25); color: var(--yellow-400); padding: 3px 10px; border-radius: 4px; font-size: .72rem; font-weight: 700; }
 
+    /* STOCK OCCASION */
+    .stock-bg { background: var(--yellow-50); border-top: 3px solid var(--yellow-400); border-bottom: 3px solid var(--yellow-400); }
+    .stock-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .stock-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.08); border: 1px solid var(--slate-300); transition: transform .2s, box-shadow .2s; }
+    .stock-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,.13); }
+    .stock-badge-row { padding: 10px 18px; display: flex; justify-content: space-between; align-items: center; background: var(--slate-900); }
+    .stock-avail { font-size: .72rem; font-weight: 700; color: #4ade80; text-transform: uppercase; letter-spacing: .6px; }
+    .stock-avail::before { content: '● '; }
+    .stock-ref { font-size: .7rem; color: rgba(255,255,255,.45); font-family: 'Courier New', monospace; }
+    .stock-body { padding: 20px 18px; }
+    .stock-type { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow-500); margin-bottom: 6px; }
+    .stock-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--slate-900); margin-bottom: 12px; }
+    .stock-specs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .stock-spec { font-size: .72rem; background: var(--slate-100); color: var(--slate-700); padding: 3px 9px; border-radius: 4px; font-weight: 600; font-family: 'Courier New', monospace; }
+    .stock-desc { font-size: .85rem; color: var(--slate-500); line-height: 1.6; margin-bottom: 16px; }
+    .stock-price { font-size: 1.15rem; font-weight: 800; color: var(--slate-900); margin-bottom: 14px; }
+    .stock-price span { font-size: .8rem; font-weight: 500; color: var(--slate-500); }
+    .stock-cta { display: block; text-align: center; background: var(--yellow-500); color: var(--slate-900); padding: 11px 18px; border-radius: 8px; font-weight: 700; font-size: .875rem; text-decoration: none; transition: background .2s; }
+    .stock-cta:hover { background: var(--yellow-400); }
+
+    /* MARQUES */
+    .marques-bg { background: var(--slate-100); }
+    .marques-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .marque-card { background: var(--white); border-radius: 10px; padding: 22px 18px; text-align: center; border: 1px solid var(--slate-300); transition: border-color .2s, box-shadow .2s; }
+    .marque-card:hover { border-color: var(--yellow-400); box-shadow: 0 4px 16px rgba(234,179,8,.15); }
+    .marque-name { font-size: 1.15rem; font-weight: 900; color: var(--slate-900); letter-spacing: -.5px; margin-bottom: 6px; }
+    .marque-tag { display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--yellow-500); background: var(--yellow-50); border: 1px solid var(--yellow-100); border-radius: 4px; padding: 2px 8px; margin-bottom: 10px; }
+    .marque-desc { font-size: .8rem; color: var(--slate-500); line-height: 1.5; }
+
     /* RESPONSIVE */
     @media (max-width: 1024px) {
       .hero-content { grid-template-columns: 1fr; }
@@ -218,13 +247,17 @@
       .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
       .process-steps::before { display: none; }
     }
+    @media (max-width: 1024px) {
+      .stock-grid { grid-template-columns: 1fr 1fr; }
+      .marques-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .strip { grid-template-columns: repeat(2, 1fr); height: 280px; }
       .kpi-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
       .intro-grid, .contact-grid { grid-template-columns: 1fr; }
       .intro-visual { display: none; }
-      .testi-grid, .gammes-grid, .why-grid, .segments-grid { grid-template-columns: 1fr; }
+      .testi-grid, .gammes-grid, .why-grid, .segments-grid, .stock-grid, .marques-grid { grid-template-columns: 1fr; }
       .process-steps { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -378,7 +411,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <img class="hero-bg" src="/images/hero.jpg" alt="" aria-hidden="true" fetchpriority="high" loading="eager" width="1200" height="800">
+  <img class="hero-bg" src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600&q=80" alt="" aria-hidden="true" fetchpriority="high" loading="eager" width="1600" height="900">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <!-- LEFT -->
@@ -450,10 +483,10 @@
 
 <!-- STRIP -->
 <div class="strip">
-  <img src="/images/strip1.jpg" alt="Reach stacker port terminal conteneurs" width="300" height="200" loading="lazy">
-  <img src="/images/strip2.jpg" alt="Empty container handler dépôt conteneurs vides" width="300" height="200" loading="lazy">
-  <img src="/images/strip3.jpg" alt="Terminal multimodal chariot porte-conteneur" width="300" height="200" loading="lazy">
-  <img src="/images/strip4.jpg" alt="Manutention industrielle lourde" width="300" height="200" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80" alt="Manutention conteneurs terminal portuaire" width="600" height="400" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&q=80" alt="Port maritime transport conteneurs" width="600" height="400" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?w=600&q=80" alt="Terminal logistique conteneurs empilés" width="600" height="400" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Chantier manutention industrielle lourde" width="600" height="400" loading="lazy">
 </div>
 
 <!-- KPI -->
@@ -495,9 +528,86 @@
         </div>
       </div>
       <div class="intro-visual">
-        <img src="/images/strip5.jpg" alt="Expert manutention conteneur portuaire" width="560" height="380" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=80" alt="Expert manutention conteneur portuaire" width="700" height="380" loading="lazy">
         <div class="intro-visual-badge">Analyse de site gratuite — Devis sous 48h</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- STOCK OCCASION -->
+<section class="stock-bg" id="stock">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag">Stock disponible</p>
+      <h2 class="section-title">Machines occasion certifiées — Disponibles immédiatement</h2>
+      <p class="section-sub">Chaque engin d'occasion est inspecté, révisé et garanti en atelier avant livraison. Stock actualisé — délai de livraison 2 à 4 semaines.</p>
+    </div>
+    <div class="stock-grid">
+      <div class="stock-card">
+        <div class="stock-badge-row">
+          <span class="stock-avail">Disponible</span>
+          <span class="stock-ref">REF-RS-4521</span>
+        </div>
+        <div class="stock-body">
+          <p class="stock-type">Reach Stacker</p>
+          <h3>Kalmar DRF 450-60S5 — 45T</h3>
+          <div class="stock-specs">
+            <span class="stock-spec">45T plein</span>
+            <span class="stock-spec">2021</span>
+            <span class="stock-spec">4 200h</span>
+            <span class="stock-spec">Spreader auto</span>
+            <span class="stock-spec">Euro Stage V</span>
+          </div>
+          <p class="stock-desc">Reach stacker Kalmar 45T révisé atelier, spreader télescopique 20'/40'/45' automatique. Système de pesée embarqué. Garantie 12 mois pièces &amp; main-d'œuvre.</p>
+          <div class="stock-price">Sur devis <span>— Analyse de financement incluse</span></div>
+          <a href="#contact" class="stock-cta">Demander le dossier technique →</a>
+        </div>
+      </div>
+      <div class="stock-card">
+        <div class="stock-badge-row">
+          <span class="stock-avail">Disponible</span>
+          <span class="stock-ref">REF-ECH-2219</span>
+        </div>
+        <div class="stock-body">
+          <p class="stock-type">Empty Container Handler</p>
+          <h3>Hyster H9.0XM-ECD — 9T</h3>
+          <div class="stock-specs">
+            <span class="stock-spec">9T vide</span>
+            <span class="stock-spec">2020</span>
+            <span class="stock-spec">6 800h</span>
+            <span class="stock-spec">9 niveaux</span>
+            <span class="stock-spec">Diesel</span>
+          </div>
+          <p class="stock-desc">ECH Hyster 9T haute cadence, empilage 9 niveaux. Révisé complet : moteur, hydraulique, spreader. Idéal dépôt 3 000–8 000 EVP. Garantie 6 mois.</p>
+          <div class="stock-price">Sur devis <span>— Option location 12–36 mois</span></div>
+          <a href="#contact" class="stock-cta">Demander le dossier technique →</a>
+        </div>
+      </div>
+      <div class="stock-card">
+        <div class="stock-badge-row">
+          <span class="stock-avail">Disponible</span>
+          <span class="stock-ref">REF-CF-3340</span>
+        </div>
+        <div class="stock-body">
+          <p class="stock-type">Chariot Frontal Conteneur</p>
+          <h3>CVS Ferrari F420 — 42T</h3>
+          <div class="stock-specs">
+            <span class="stock-spec">42T plein</span>
+            <span class="stock-spec">2019</span>
+            <span class="stock-spec">5 100h</span>
+            <span class="stock-spec">20/40 ft</span>
+            <span class="stock-spec">Compact</span>
+          </div>
+          <p class="stock-desc">Chariot frontal CVS Ferrari 42T reconditionné. Parfait pour terminaux à espace contraint : rayon de braquage réduit, transmission révisée. Garantie 6 mois pièces.</p>
+          <div class="stock-price">Sur devis <span>— Livraison sous 3 semaines</span></div>
+          <a href="#contact" class="stock-cta">Demander le dossier technique →</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="#contact" class="btn-primary">Consulter tout le stock disponible →</a>
+      <p style="margin-top:12px;font-size:.82rem;color:var(--slate-500);">Nouvelles entrées chaque semaine · Stock actualisé en temps réel · Devis sous 48h</p>
     </div>
   </div>
 </section>
@@ -588,6 +698,59 @@
           <span class="gamme-spec">Électrique/Diesel</span>
         </div>
         <a href="#contact" class="gamme-cta">Demander un devis →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUES -->
+<section class="marques-bg">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-tag">Nos constructeurs</p>
+      <h2 class="section-title">Partenaires fabricants sélectionnés pour leur fiabilité terrain</h2>
+      <p class="section-sub">Aucune exclusivité commerciale — nous recommandons la marque la plus adaptée à votre cas d'usage, pas celle avec le meilleur accord.</p>
+    </div>
+    <div class="marques-grid">
+      <div class="marque-card">
+        <div class="marque-name">KALMAR</div>
+        <div class="marque-tag">Partenaire Premium</div>
+        <p class="marque-desc">Leader mondial reach stackers. Gamme DRF 400–600. Systèmes de pesée et automation embarquée. SAV constructeur disponible en France.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">HYSTER</div>
+        <div class="marque-tag">Distributeur Agréé</div>
+        <p class="marque-desc">Référence empty container handlers haute cadence. Série H-ECH jusqu'à 12T. Robustesse reconnue en opérations 24h/24.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">KONECRANES</div>
+        <div class="marque-tag">Partenaire Service</div>
+        <p class="marque-desc">Spécialiste grands ports et terminaux intensifs. Solutions de levage lourde et systèmes RTG intégrés pour terminaux haute densité.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">CVS FERRARI</div>
+        <div class="marque-tag">Distributeur France</div>
+        <p class="marque-desc">Expert chariots frontaux et latéraux conteneurs. Gamme F300–F480. Maniabilité en espace contraint, robustesse terminal ferroviaire.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">FANTUZZI</div>
+        <div class="marque-tag">Partenaire Technique</div>
+        <p class="marque-desc">Constructeur italien spécialisé manutention lourde. Reach stackers et ECH conçus pour conditions d'exploitation extrêmes.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">SMV / SVETRUCK</div>
+        <div class="marque-tag">Occasion Certifiée</div>
+        <p class="marque-desc">Marques Scandinaves durables, très représentées en stock occasion reconditionné. Pièces disponibles en France. Excellent rapport coût/fiabilité.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">LINDE</div>
+        <div class="marque-tag">Sur commande</div>
+        <p class="marque-desc">Gamme chariots lourds industriels pour sites sidérurgiques et chimiques. Spécification pinces et crochets pour charges hors-standard.</p>
+      </div>
+      <div class="marque-card">
+        <div class="marque-name">LTMG</div>
+        <div class="marque-tag">Budget maîtrisé</div>
+        <p class="marque-desc">Constructeur asiatique homologué CE. Rapport qualité-prix optimal pour flottes de dépôts ou structures souhaitant un premier équipement économique.</p>
       </div>
     </div>
   </div>
